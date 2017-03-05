@@ -10,8 +10,9 @@
 // Point of rotation needs to be in the middle of the the XY ala 1000mm so a 600mm linear could get to 200x 1000y to 1000x200y 
 // to 1800x1000y to 1000x1800y with a 240mm circle in the middle you can't get too... 
 // That needs to be added to the math.
-
-
+// for a 5:1 reduction rotary at 16 microsteps with a 200 step 1.8 degree stepper it's
+// 2546.479088888863 steps per radian approximately 44.444444444 steps per degree, for 2pi for 360 degree's
+// pi = 3.14159265359
 
 // Linear is considered the same steps per mm as cartesian gcode;
 // Linear is considered to home at Y120X0 Might have to  Preload D and oD
