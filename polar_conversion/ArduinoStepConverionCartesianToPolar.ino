@@ -2,7 +2,6 @@
 
 
 #include <math.h>
-#define STEPSRADIAN  123.4 // Steps per radian YOU NEED TO CHANGE THIS!
 #define RX 0 // Point of Rotation X
 #define RY 0 // Point of Rotation Y
 // Home angle is considered 0
@@ -22,6 +21,7 @@
 
 // Setup to only go Positive on steps so where do jigger is homed at Rotation 0, linear rail at 120mm
 unsigned long X = 0, oX = 0, Y = 0, oY = 0, A = 0. oA = 0, D = 96000, oD = 96000;
+double STEPSRADIAN =  2546.479088888863; // Steps per radian YOU NEED TO CHANGE THIS!
 
 
 int Xd = 4; // X Direction
